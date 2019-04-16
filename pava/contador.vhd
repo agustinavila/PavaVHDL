@@ -1,3 +1,4 @@
+--se me hace que uso librerias de mas
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

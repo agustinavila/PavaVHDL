@@ -1,3 +1,13 @@
+-- Trabajo práctico para la materia Electronica Digital 2
+-- de la carrera Ingenieria Electronica en la UNSJ
+
+--El codigo pertenece a una pava electrica con control digital de temperatura
+--lee la temperatura de un ADC, compara con una temperatura seteada
+--y realiza una accion de control (deberia ser un controlador PI, pero solo es proporcional)
+--Al mismo tiempo, muestra el setpoint y la temperatura actual en 4 displays de 7 segmentos.
+--Actualiza cada 2,56s la accion de control, segun la temp actual es es tiempo activo de la salida.
+--Agustin Avila, 2018
+
 library ieee;
 use ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
