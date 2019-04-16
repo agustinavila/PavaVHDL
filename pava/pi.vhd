@@ -1,8 +1,16 @@
+--REVISAR ESTE COMPONENTE!!!
+--Deberia ser el controlador PI
+--Pero se solucionó a los golpes
+--y directamente es proporcional,
+-- tiene una ganancia de 2 para la señal de error
+--(salida - setpoint)
+-- Cuando aprenda controladores PI digitales lo arreglare
+
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 uSE ieee.std_logic_unsigned.all;
 --todo lo que esta comentado es de la parte integral
-
+-- este archivo es una cochinada
 entity pi is
 	generic
 		(

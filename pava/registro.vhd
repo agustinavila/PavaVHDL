@@ -1,3 +1,7 @@
+--Es un simple registro de 8bit.
+--tiene anulado el reset, en su momento necesitaba hacerlo andar rapido
+--tiene margen para mejorar
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -11,11 +15,8 @@ port(
 end registro;
 	
 architecture prueba of registro is
-
 	signal ssalida : std_logic_vector(7 downto 0);
-
 begin
-
 	process (CLK)
 		begin
 			--if (RST='1') then

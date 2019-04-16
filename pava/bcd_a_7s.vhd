@@ -4,6 +4,8 @@
 --si se quiere representar un numero de 3 digitos,
 --al solo tener 2 escribe "Er"
 --si se llegase a escribir un valor no valido, escribe "--"
+--le podria haber agregado un bit mas para utilizar el punto del display
+--pero no me parecio necesario. Se podria agregar despues.
 
 --eso es parte del bin_a_dec
 

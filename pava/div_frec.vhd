@@ -1,4 +1,7 @@
 --Componente divisor de frecuencia
+--se le asigna como entrada un clk del FPGA
+--cuya frecuencia es de 50MHz
+--Y se obtiene una salida de 100Hz
 
 library ieee;
 use ieee.std_logic_1164.all;

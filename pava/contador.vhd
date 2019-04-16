@@ -1,4 +1,4 @@
---se me hace que uso librerias de mas
+--se me hace que uso librerias de mas, en su momento funciono y no lo revise
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -14,11 +14,8 @@ entity contador is
 end contador;
  
 architecture behaviour of contador is
-	--signal cont	: std_logic_vector(7 downto 0):="00000000";
 	signal c256 : std_logic;
- 
 begin
- 
 	process(clk)
 	variable cont : std_logic_vector(7 downto 0);
 		begin
@@ -27,12 +24,11 @@ begin
 					cont := "00000000";
 					c256 <= '1';					--y tira un pulso
 				else 
-					cont :=cont + '1';			--si no es 256, suma
+					cont :=cont + '1';			--si no es 256, aumenta
 					c256 <= '0';					--apaga el pulso
 				end if;
 			end if;
 		contador <= cont;
-		cont256	<= c256;
+		cont256	<= c256;	--puede que esto sea redundante, podria asignarle le valor en el process
 	end process;
- 
 end behaviour;

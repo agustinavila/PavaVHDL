@@ -1,3 +1,8 @@
+--deberia mostrar ki o kp
+--el tema es que esos valores estan integrados en el PI
+--al final no me dio el tiempo para integrar esto
+--pero estaria bueno que funcione
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -23,7 +28,7 @@ architecture behaviour of k is
 
 begin
 
-	process(kikp,ki,kp)
+	process(kikp,ki,kp)		--revisar esto, probablemente ni ande
 		--variable kk : unsigned(7 downto 0);
 		begin
 		if(kikp='1') then			--con kikp en 1 modifica ki, en 0 modifica kp
